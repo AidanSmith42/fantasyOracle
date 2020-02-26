@@ -9,4 +9,4 @@ Fun project that I've used with good results in my Fantasy league and in Daily F
 
 app live at https://psmith54.shinyapps.io/fantasy/
 
-![img](screenshot.png)
+![img](screenshot.PNG)
