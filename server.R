@@ -277,7 +277,7 @@ server <- function(input, output, session){
                                   RecYds + AvgRush,
                                 data = tot,
                                 min.node.size = 50,
-                                mtry = 5,
+                                mtry = 3,
                                 importance = 'impurity',
                                 quantreg = TRUE)
             
@@ -288,7 +288,7 @@ server <- function(input, output, session){
                                   AvgRuTD+ Tm,
                                 data = tot,
                                 min.node.size = 50,
-                                mtry = 5,
+                                mtry = 3,
                                 importance = 'impurity',
                                 quantreg = TRUE)
             recTDs =  ranger(ReTD ~ 
@@ -299,7 +299,7 @@ server <- function(input, output, session){
                                AvgReTD + AvgReYds + AvgREC + Tm,
                              data = tot,
                              min.node.size = 50,
-                             mtry = 5,
+                             mtry = 3,
                              importance = 'impurity',
                              quantreg = TRUE)
             recYds = ranger(ReYds ~ 
@@ -310,7 +310,7 @@ server <- function(input, output, session){
                               RecYds+ AvgReYds+ Tm,
                             data = tot,
                             min.node.size = 50,
-                            mtry = 5,
+                            mtry = 3,
                             importance = 'impurity',
                             quantreg = TRUE)
             
@@ -321,7 +321,7 @@ server <- function(input, output, session){
                            RecYds + AvgReYds + AvgREC+ Tm,
                          data = tot,
                          min.node.size = 50,
-                         mtry = 5,
+                         mtry = 3,
                          importance = 'impurity',
                          quantreg = TRUE)
             
@@ -351,7 +351,7 @@ server <- function(input, output, session){
                                AvgReTD + AvgReYds + AvgREC + Tm,
                              data = tot,
                              min.node.size = 50,
-                             mtry = 5,
+                             mtry = 4,
                              importance = 'impurity',
                              quantreg = TRUE)
             recYds = ranger(ReYds ~ 
@@ -360,7 +360,7 @@ server <- function(input, output, session){
                               RecYds+ AvgReYds + Tm,
                             data = tot,
                             min.node.size = 50,
-                            mtry = 5,
+                            mtry = 3,
                             importance = 'impurity',
                             quantreg = TRUE)
             
@@ -370,7 +370,7 @@ server <- function(input, output, session){
                            RecYds + AvgReYds + AvgREC + Tm,
                          data = tot,
                          min.node.size = 50,
-                         mtry = 5,
+                         mtry = 3,
                          importance = 'impurity',
                          quantreg = TRUE)
             
@@ -453,7 +453,7 @@ server <- function(input, output, session){
                             AvgTD + Yds,
                           data = tot,
                           min.node.size = 50,
-                          mtry = 3,
+                          mtry = 2,
                           importance = 'impurity',
                           quantreg = TRUE)
             
